@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    command: python run.py
+    volumes:
+      - .:/parsing/
+    ports:
+      - "8000:8000"
+#    depends_on:
+#      - mongo
+#
+#  mongo:
+#    image: mongo:4.1.6
+#    container_name: "mongo"
+#    ports:
+#      - "27017:27017"
+#    volumes:
+#      - ~/apps/mongo:/data/db
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+#      MONGO_INITDB_ROOT_PASSWORD: mongoadmin
