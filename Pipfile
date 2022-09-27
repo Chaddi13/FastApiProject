@@ -6,9 +6,10 @@ name = "pypi"
 [packages]
 fastapi = "0.81.0"
 uvicorn = "0.18.3"
-pymongo = "4.2.0"
 beautifulsoup4 = "*"
 httpx = "*"
+pymongo = {extras = ["srv"], version = "*"}
+requests = "*"
 
 [dev-packages]
 
